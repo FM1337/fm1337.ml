@@ -1,0 +1,24 @@
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
+<title>Server Error</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<br>
+<div class="alert alert-danger">
+  <h4>Error</h4>
+  <p>The server is currently experiencing issues and cannot display this page</p>
+</div>
+The following information below contains details on the error.
+<div class="alert alert-info">
+<b>Error Code:</b>500 Internal server error</br>
+<b>URL:</b><!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --></br>
+<b>Browser:</b><!--#echo var="HTTP_USER_AGENT" --></br>
+<b>IP:</b><!--#echo var="REMOTE_ADDR" --></br>
+<strong>Please send this information to <a href="mailto:webmaster@<!--#echo var="HTTP_HOST" -->">webmaster@<!--#echo var="HTTP_HOST" --></a></strong>
+</div>
+<p><center><a class="btn btn-primary btn-lg" onclick="goBack()">Go Back</a></center></p>
+<!-- 
+                                                                                                                                                                                                                                                                                                                        
+--> 

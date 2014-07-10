@@ -1,0 +1,20 @@
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
+<title>404 Not Found </title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<br>
+<div class="alert alert-danger">
+  <h4>Error</h4>
+  <p>The following URL <!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --> could not be found!</p>
+</div>
+The following information below contains details on the error.
+<div class="alert alert-info">
+<b>URL:</b><script type="text/javascript"> document.write(location.href); </script> </br>
+<b>Browser:</b> <script type="text/javascript"> document.write(navigator.userAgent); </script>
+<b>IP:</b><!--#echo var="REMOTE_ADDR" --></br>
+<strong>Please send this information to <a href="mailto:webmaster@<!--#echo var="HTTP_HOST" -->">webmaster@<!--#echo var="HTTP_HOST" --></a></strong>
+</div>
+<p><center><a class="btn btn-primary btn-lg" onclick="goBack()">Go Back</a></center></p>

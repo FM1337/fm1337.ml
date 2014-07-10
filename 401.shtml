@@ -1,0 +1,24 @@
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
+<title>Authorization required</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<br>
+<div class="alert alert-warning">
+  <h4>Warning</h4>
+  <p>You tried to access <!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --> without authorizing yourself, please try again.</p>
+</div>
+The following information below contains details on the error.
+<div class="alert alert-info">
+<b>Error Code:</b>401 Authorization required</br>
+<b>URL:</b><!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --></br>
+<b>Browser:</b><!--#echo var="HTTP_USER_AGENT" --></br>
+<b>IP:</b><!--#echo var="REMOTE_ADDR" --></br>
+<strong>Please send this information to <a href="mailto:webmaster@<!--#echo var="HTTP_HOST" -->">webmaster@<!--#echo var="HTTP_HOST" --></a></strong>
+</div>
+ <p><center><a class="btn btn-primary btn-lg" onclick="goBack()">Go Back</a></center></p>
+<!-- 
+                                                                                                                                                                                                                                                                                                                        
+--> 
